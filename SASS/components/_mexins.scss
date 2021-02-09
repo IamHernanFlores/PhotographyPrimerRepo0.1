@@ -1,0 +1,61 @@
+//codigos reutilizables, por ejemplo poner varias etiquetas que usaremos
+//  @mixin button { (aca adentro va recopilado todo el codigo resumido 
+  //(poner &:hover (&repetir el selector padre, si se quiere o tambien @media 
+   // a usarlo en 
+   // por ejemplo en .menu { @include (para llamar mixin y el nombre del mixin (button)s
+
+
+   // por ejem
+
+  /* @mixin  flexbox {
+      display: flex;
+      justify-content: center;
+  }
+  
+  @mixin buttons {
+      text-align: center;
+  }    */
+
+
+  @mixin header {
+    color: black;
+    font-family: $fontsyne;
+    letter-spacing: 2px;
+   
+    &:hover  {
+      text-decoration: line-through;
+      color: black;
+    }
+   
+  }
+
+  @mixin formw {
+    &:hover {
+      -webkit-transform:scale(0.5);transform:scale(0.97);
+    overflow:hidden;
+    }
+  }
+
+  @mixin button {
+    &:hover {
+      background: rgb(22, 22, 22); 
+    }
+  }
+  
+  @mixin galleryimg {
+    &:hover {
+      filter: brightness(1) grayscale(0);
+
+    -webkit-transform:scale(0.5);transform:scale(0.97);
+     overflow:hidden;
+
+    /* filter: opacity(1); */
+    }
+  }
+
+  @mixin imageabout {
+    &:hover {
+      -webkit-transform:scale(0.5);transform:scale(0.97);
+    overflow:hidden;
+    }
+  }
